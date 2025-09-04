@@ -2,6 +2,7 @@ from vehiculo import Vehiculo
 
 class Camion(Vehiculo):
     def __init__(self, marca, modelo, precio, capacidad_carga):
+        # Herencia
         super().__init__(marca, modelo, precio)
         if capacidad_carga >= 1000:
             self.capacidad_carga = capacidad_carga

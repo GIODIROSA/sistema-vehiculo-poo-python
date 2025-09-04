@@ -3,6 +3,7 @@ from vehiculo import Vehiculo
 
 class Moto(Vehiculo):
     def __init__(self, marca, modelo, precio, cilindrada):
+        # Herencia
         super().__init__(marca, modelo, precio)
         self.cilindrada = cilindrada
 

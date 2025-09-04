@@ -25,6 +25,7 @@ def main():
     concesionario.agregar_vehiculo(auto_chevrolet)
 
     # 2. Mostrar descripciones individuales
+    # Se realiza polimorfismo en el uso de descripción
     print("\n--- Descripciones Individuales ---")
     print(vehiculo.descripcion())
     print(moto.descripcion())

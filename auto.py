@@ -2,6 +2,7 @@ from vehiculo import Vehiculo
 
 class Auto(Vehiculo):
     def __init__(self, marca, modelo, precio, puertas):
+        # Herencia
         super().__init__(marca, modelo, precio)
         if puertas >= 2:
             self.puertas = puertas
