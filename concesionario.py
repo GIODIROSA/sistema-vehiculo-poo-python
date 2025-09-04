@@ -4,10 +4,12 @@ class Concesionario:
     def __init__(self):
         self.catalogo = []
 
+    #Metodo para agregar el vehiculo al catálogo
     def agregar_vehiculo(self, vehiculo):
         print(f"Vehículo agregado: {vehiculo.descripcion()} - Precio: ${vehiculo.get_precio()}")
         self.catalogo.append(vehiculo)   
 
+    #Metodo para modificar el precio del vehiculo
     def modificar_precio_vehiculo(self, vehiculo_a_modificar, nuevo_precio): 
         for vehiculo in self.catalogo:
             if vehiculo is vehiculo_a_modificar:
@@ -16,9 +18,9 @@ class Concesionario:
                 vehiculo.set_precio(nuevo_precio)
                 print(f"Nuevo precio: ${vehiculo.get_precio()}")
                 return
-            print("El vehículo no se encuentra en el catálogo.")
             
-
+            
+    #Metodo para mostrar el catalogo
     def mostrar_catalogo(self):
         print("\n--- Catálogo de Vehículos ---")
         print("Total de vehículos en el concesionario:", len(self.catalogo))

@@ -6,16 +6,18 @@ class Moto(Vehiculo):
         super().__init__(marca, modelo, precio)
         self.cilindrada = cilindrada
 
+    #Trae el precio
     def get_precio_moto(self):
         return self.get_precio()
     
+    #Modifica el precio
     def set_precio_moto(self, nuevo_precio_moto):
         if nuevo_precio_moto > 0:
             self.set_precio(nuevo_precio_moto)
         else:
             print("El precio de la moto debe ser mayor que 0")
 
-    
+    #Metodo arma la descripción del vehiculo
     def descripcion(self):
         valor_precio = self.get_precio_moto()
         objeto_descripcion_moto= {

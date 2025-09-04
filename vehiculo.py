@@ -5,10 +5,12 @@ class Vehiculo:
         self.modelo = modelo
         self.__precio = precio
 
+     #Trae el precio
     def get_precio(self): 
             mostrar_precio = self.__precio
             return mostrar_precio
     
+     #Modifica el precio
     def set_precio(self, nuevo_precio):
             if nuevo_precio > 0:
                 self.__precio = nuevo_precio
@@ -16,6 +18,7 @@ class Vehiculo:
             else:
                 print("El precio debe ser mayor que 0")
 
+    #Metodo arma la descripción del vehiculo
     def descripcion(self):   
          objeto_descripcion= {
             "marca": self.marca,

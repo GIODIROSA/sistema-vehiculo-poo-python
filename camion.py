@@ -9,15 +9,18 @@ class Camion(Vehiculo):
             print("El camión debe tener una capacidad de carga mínima de 1000 kg")
             self.capacidad_carga = 1000
 
+    #Trae el precio
     def get_precio_camion(self):
         return self.get_precio()
     
+    #Modifica el precio
     def set_precio_camion(self, nuevo_precio_camion):
         if nuevo_precio_camion > 0:
             self.set_precio(nuevo_precio_camion)
         else:
             print("El precio del camión debe ser mayor que 0")
 
+    #Metodo arma la descripción del vehiculo
     def descripcion(self):
         valor_precio_camion = self.get_precio_camion()
         objeto_descripcion_camion= {
